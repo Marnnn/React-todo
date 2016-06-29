@@ -19,7 +19,12 @@ export var addTodo = (text) => {
   };
 };
 
-// toggleTodo(id) TODDLE_TODO
+export var addTodos = (todos) => {
+  return {
+    type: 'ADD_TODOS',
+    todos
+  };
+};
 
 export var toggleTodo = (id) => {
   return {
